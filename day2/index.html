@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>LINE Plus Corporation</title>
+        <style>
+            /* css 초기화 */
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            embed,
+            figure,
+            figcaption,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            output,
+            ruby,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol,
+            ul {
+                list-style: none;
+            }
+            blockquote,
+            q {
+                quotes: none;
+            }
+            blockquote:before,
+            blockquote:after,
+            q:before,
+            q:after {
+                content: "";
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            /* css 초기화 끝 */
+
+            .logo_contents,
+            .main-section,
+            .sub_section,
+            .footer {
+                width: 1125px;
+                margin: 0 auto;
+            }
+            .header {
+                background-color: thistle;
+            }
+            /* logo */
+            .logo {
+                display: inline-block;
+            }
+            .logo_contents {
+                background-color: navajowhite;
+            }
+            /* navigation */
+            .navigation {
+                background-color: forestgreen;
+            }
+
+            .menu {
+                background-color: salmon;
+                position: relative;
+            }
+            .sub_menu {
+                visibility: ;
+            }
+            .readable-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                margin: -1px;
+                clip: rect(0, 0, 0, 0);
+            }
+            .menu_item {
+                background-color: skyblue;
+            }
+            .sub_menu {
+                background-color: rosybrown;
+            }
+
+            /* nav bar right */
+            .sitemap_lang {
+                background-color: sandybrown;
+            }
+
+            /* visual section */
+            .visual_bg {
+                background-color: violet;
+            }
+            .visual {
+                background-color: aquamarine;
+            }
+
+            /* main section */
+            .main-section {
+                background-color: darkgoldenrod;
+            }
+
+            .content_header {
+                background-color: darkolivegreen;
+            }
+            .content_text {
+                background-color: darkorange;
+            }
+            .content_text_ul {
+                background-color: darkcyan;
+            }
+
+            /* sub section */
+            .sub_section_bg {
+                background-color: darkkhaki;
+            }
+            .sub_section {
+                background-color: silver;
+            }
+            .footer {
+                background-color: cadetblue;
+            }
+
+            .line {
+                width: 72px;
+                height: 27px;
+                top: 33px;
+                right: 391px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo_contents">
+                    <h1 class="logo">
+                        <a href="https://linepluscorp.com/">
+                            <img class="line" src="images/LINE.png" alt="" />
+                        </a>
+                    </h1>
+                    <!-- 상단 메뉴 -->
+                    <nav class="navigation">
+                        <ul class="menu">
+                            <h2 class="readable-hidden">"메인메뉴"</h2>
+                            <li class="menu_item">
+                                <a href="" class="menu_item_text">회사소개</a>
+                                <ul class="sub_menu">
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_item_text">사업</a>
+                                <ul class="sub_menu">
+                                    <a href=""><li>서비스</li></a>
+                                    <a href=""><li>서비스</li></a>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_item_text">홍보</a>
+                                <ul class="sub_menu">
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_item_text">채용</a>
+                                <ul class="sub_menu">
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                    <a href=""><li>회사소개</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 상단 오른쪽 메뉴 -->
+                    <div class="sitemap_lang">
+                        <a href=""></a>
+                        <ul>
+                            <a href="">
+                                <li>English</li>
+                                <li>日本語</li>
+                                <li>한국어</li>
+                                <li>中文(繁體)</li>
+                                <li>中文(简体)</li>
+                                <li>ภาษาไทย</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- visual section -->
+            <div class="visual_bg">
+                <div class="visual">
+                    <h2>visual text</h2>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <!-- main section -->
+            <section class="main-section">
+                <header class="content_header">
+                    <h2 class="visual_title">News Room</h2>
+                    <a href="">
+                        <button>more ></button>
+                    </a>
+                </header>
+                <section class="content_text">
+                    <ul class="content_text_ul">
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                        <a href="" class="content_text_li">
+                            <li>News Room text</li>
+                        </a>
+                    </ul>
+                </section>
+            </section>
+            <!-- sub section -->
+            <div class="sub_section_bg">
+                <section class="sub_section">
+                    <ul class="sub_list">
+                        <a href="https://partners.line.me/ko">
+                            <ul>
+                                <li>비즈니스 제휴 문의</li>
+                                <li>
+                                    LINE은 사용자들의 커뮤니케이션을 더욱 즐겁게
+                                    만들어줄 파트너 기업을 모집합니다.
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="">
+                            <ul>
+                                <li>기술정보</li>
+                                <li>
+                                    LINE은 사용자들의 커뮤니케이션을 더욱 즐겁게
+                                    만들어줄 파트너 기업을 모집합니다.
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="">
+                            <ul>
+                                <li>채용공고</li>
+                                <li>
+                                    LINE은 사용자들의 커뮤니케이션을 더욱 즐겁게
+                                    만들어줄 파트너 기업을 모집합니다.
+                                </li>
+                            </ul>
+                        </a>
+                        <a href="">
+                            <ul>
+                                <li>캐릭터 사업</li>
+                                <li>
+                                    LINE은 사용자들의 커뮤니케이션을 더욱 즐겁게
+                                    만들어줄 파트너 기업을 모집합니다.
+                                </li>
+                            </ul>
+                        </a>
+                    </ul>
+                </section>
+            </div>
+            <footer class="footer">footer</footer>
+        </div>
+    </body>
+</html>
