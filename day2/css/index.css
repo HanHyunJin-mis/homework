@@ -1,0 +1,259 @@
+/* css 초기화 */
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* css 초기화 끝 */
+
+
+.readable_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.header_center,
+.slogan,
+.main_section,
+.sub_section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header_bg {
+    background-color: sandybrown;
+}
+
+.header_center {
+    background-color: skyblue;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 72px;
+    height: 25px;
+    top: 33px;
+    right: 391px;
+}
+
+.lang {
+    order: 2;
+}
+
+.navigation {
+    order: 1;
+}
+
+.menu_item {
+    display: inline-block;
+}
+
+/* slogan */
+.slogan_bg {
+    background-color: slateblue;
+}
+
+.slogan {
+    background-color: salmon;
+    height: 610px;
+}
+
+/* main section */
+.main_section {
+    background-color: seagreen;
+    height: 500px;
+    padding: 75px 0;
+    box-sizing: border-box;
+}
+
+.sub_section_bg {
+    background-color: rosybrown;
+}
+
+.main_section_title {
+    font-size: 2rem;
+}
+
+.main_section_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* order: 2; */
+}
+
+.main_section_text li a {
+    display: block;
+    height: 47px;
+}
+
+.main_section_btn {
+    /* order: 1; */
+}
+
+.main_section_text_title {
+    font-size: 1.089rem;
+    width: 542px;
+    margin-top: 34px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main_section_text_title~time,
+.main_section_text_title~span {
+    font-size: 0.825rem;
+}
+
+/* sub section */
+.sub_section {
+    height: 200px;
+    background-color: cadetblue;
+}
+
+/* footer */
+.footer_bg {
+    background-color: chartreuse;
+}
