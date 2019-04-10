@@ -8,7 +8,6 @@ a {
     color: black;
 }
 
-
 html,
 body,
 div,
@@ -28,6 +27,7 @@ pre,
 a,
 abbr,
 acronym,
+button,
 address,
 big,
 cite,
@@ -94,7 +94,8 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
+    font: inherit;
+    font-family: "Nanum Gothic", sans-serif;
     vertical-align: baseline;
 }
 
@@ -142,7 +143,6 @@ table {
 
 /* css 초기화 끝 */
 
-
 .readable_hidden {
     position: absolute;
     width: 1px;
@@ -155,45 +155,134 @@ table {
 .header_center,
 .slogan,
 .main_section,
-.sub_section {
+.sub_section,
+.footer {
     width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* header */
 .header_bg {
-    background-color: sandybrown;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
-
 .header_center {
-    background-color: skyblue;
+    /* background-color: skyblue; */
+    padding: 35px 0;
     height: 93px;
-    display: flex;
-    justify-content: space-between;
+    /* position: relative; */
 }
-
+.header_center::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .logo {
     width: 72px;
     height: 25px;
-    top: 33px;
-    right: 391px;
-}
-
-.lang {
-    order: 2;
+    float: left;
 }
 
 .navigation {
-    order: 1;
+    /* background-color: pink; */
+    margin-left: 160px;
+    width: 780px;
+    float: left;
+}
+.menu {
+    /* background-color: cornflowerblue; */
+    font-size: 0rem;
 }
 
 .menu_item {
+    /* background-color: greenyellow; */
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.menu_item_title {
+    /* background-color: gold; */
+    padding: 0 45px 41px 0;
     display: inline-block;
 }
 
+.menu_item_list {
+    background-color: hsla(0, 0%, 94%, 0.95);
+    position: absolute;
+    left: 0;
+    padding: 32px 0 32px 500px;
+    width: 100%;
+    font-size: 1rem;
+    display: none;
+    /* visibility: hidden; */
+}
+.menu_act {
+    /* visibility: visible; */
+}
+
+.menu_item_list li {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.menu_item_mission li {
+    /* background-color: red; */
+    display: block;
+    padding-top: 1rem;
+}
+
+.sitemap {
+    float: right;
+    color: #adadad;
+}
+.lang {
+    /* background-color: teal; */
+    position: absolute;
+    top: 25px;
+    right: 350px;
+}
+.lang_list {
+    background-color: white;
+    width: 130px;
+    border-radius: 25px;
+    padding-bottom: 13px;
+    border: 1px solid #c8c8c8;
+}
+.lang_act {
+    display: none;
+}
+.select_lang {
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #c8c8c8;
+    border-radius: 25px;
+}
+.select_lang::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid;
+}
+.lang_list li {
+    /* background-color: pink; */
+    padding: 15px 20px 0 20px;
+    font-size: 0.9rem;
+}
+.select_lang,
+.lang_list li a,
+.sitemap a {
+    color: #838383;
+    font-size: 1.0625rem;
+}
 /* slogan */
 .slogan_bg {
     background-color: slateblue;
+    height: 600px;
+    margin-top: 93px;
 }
 
 .slogan {
@@ -201,12 +290,22 @@ table {
     height: 610px;
 }
 
+/* iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+} */
+
 /* main section */
 .main_section {
     background-color: seagreen;
     height: 500px;
     padding: 75px 0;
-    box-sizing: border-box;
 }
 
 .sub_section_bg {
@@ -221,16 +320,11 @@ table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* order: 2; */
 }
 
 .main_section_text li a {
     display: block;
     height: 47px;
-}
-
-.main_section_btn {
-    /* order: 1; */
 }
 
 .main_section_text_title {
@@ -242,18 +336,60 @@ table {
     text-overflow: ellipsis;
 }
 
-.main_section_text_title~time,
-.main_section_text_title~span {
+.main_section_text_title ~ time,
+.main_section_text_title ~ b {
+    color: green;
     font-size: 0.825rem;
+}
+
+.main_section_text_title ~ time::after {
+    content: " | ";
+}
+
+.main_section_btn {
+    position: absolute;
 }
 
 /* sub section */
 .sub_section {
     height: 200px;
+    padding: 50px 0;
     background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_section_link {
+    width: 220px;
+    display: inline-block;
+}
+
+.sub_section-title {
+    font-size: 1.15rem;
+}
+
+.sub_section-text {
+    font-size: 0.9375rem;
+    line-height: 23px;
+    margin-top: 17px;
 }
 
 /* footer */
 .footer_bg {
     background-color: chartreuse;
+}
+
+.footer {
+    background-color: silver;
+    height: 105px;
+    padding: 48px;
+}
+
+.footer_list,
+.footer_list li {
+    display: inline-block;
+}
+
+.family-sites {
+    float: right;
 }
