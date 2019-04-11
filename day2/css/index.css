@@ -153,6 +153,7 @@ table {
 }
 
 .header_center,
+.menu_item_list,
 .slogan,
 .main_section,
 .sub_section,
@@ -171,7 +172,7 @@ table {
 }
 .header_center {
     /* background-color: skyblue; */
-    padding: 35px 0;
+    padding: 33px 0;
     height: 93px;
     /* position: relative; */
 }
@@ -206,39 +207,46 @@ table {
 .menu_item_title {
     /* background-color: gold; */
     padding: 0 45px 41px 0;
-    display: inline-block;
+    display: block;
 }
-
-.menu_item_list {
+.menu_item_list_bg {
+    /* background: pink; */
     background-color: hsla(0, 0%, 94%, 0.95);
     position: absolute;
     left: 0;
-    padding: 32px 0 32px 500px;
     width: 100%;
-    font-size: 1rem;
     display: none;
-    /* visibility: hidden; */
+}
+.menu_item:hover .menu_item_list_bg {
+    display: block;
 }
 .menu_act {
-    /* visibility: visible; */
+    /* display: block; */
 }
-
-.menu_item_list li {
+.menu_item_list {
+    /* background: yellow; */
+    padding: 33px 0;
+}
+.menu_item_list > li {
+    /* background: sandybrown; */
+    margin-right: 34px;
     display: inline-block;
-    padding-right: 20px;
     vertical-align: top;
 }
 
-.menu_item_mission li {
-    /* background-color: red; */
-    display: block;
-    padding-top: 1rem;
-}
-
-.sitemap {
+.menu .sitemap {
     float: right;
     color: #adadad;
 }
+.menu_item_mission {
+    margin-top: 13px;
+    line-height: 1.7;
+}
+.menu_item_mission li a {
+    font-size: 0.9rem;
+    color: #838383;
+}
+/* 언어 선택 */
 .lang {
     /* background-color: teal; */
     position: absolute;
